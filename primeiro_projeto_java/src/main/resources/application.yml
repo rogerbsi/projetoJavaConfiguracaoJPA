@@ -1,0 +1,19 @@
+
+spring:
+    datasource:
+        url:
+            jdbc:mysql://host/nome_do_banco
+        username:   user
+        password:   senha
+
+
+
+    jpa:
+        hibernate:
+            ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+        show-sql: true
+        database: mysql
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+        open-in-view: false
+        generate-ddl: true
+    
